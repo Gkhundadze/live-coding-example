@@ -84,12 +84,8 @@ const dataAraay = [
         ]
     },
 ]
-
 const root = document.querySelector('.root')
-
-
 renderUsers(dataAraay, root)
-
 function renderUsers(userArray, path) {
     userArray.forEach((element) => {
         const card = document.createElement('div')
@@ -97,28 +93,21 @@ function renderUsers(userArray, path) {
         card.addEventListener('click', function () {
             this.classList.toggle('shadow')
         })
-
-
         const userId = document.createElement('h2')
         userId.setAttribute('class', 'user-id')
         userId.textContent = element.userId
-
         const userImage = document.createElement('img')
         userImage.setAttribute('class', 'user-image')
         userImage.setAttribute('src', element.userImage)
-
         const userName = document.createElement('h3')
         userName.setAttribute('class', 'user-name')
         userName.textContent = element.userName
-
         const userLastName = document.createElement('h4')
         userLastName.setAttribute('class', 'user-last-name')
         userLastName.textContent = element.userLastName
-
         const userAge = document.createElement('h5')
         userAge.setAttribute('class', 'user-age')
         userAge.textContent = element.userAge + ' : years old '
-
         const cardFooter = document.createElement('div')
         cardFooter.setAttribute('class', 'card-footer')
         cardFooter.textContent = 'Addresses : '
