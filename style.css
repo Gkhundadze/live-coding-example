@@ -65,7 +65,7 @@
 }
 
 .footer__li:hover{
-    color: rgb(255, 215, 0);
+    color: rgb(161, 57, 225);
 }
 
 @media(max-width:600px){
