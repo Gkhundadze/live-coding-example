@@ -21,10 +21,16 @@
     background-color: rgba(255,255,255, 0.5);
     border-radius: .5rem;
     cursor: pointer;
+
 }
 .card .user-image {
     width: 100%;
     display: block;
+    transition: 0.8s;
+}
+.card,.user-image:hover { 
+    transform: scale(1.1);
+    transition: 0.8s ease;
 }
 .card .user-id {
     text-align: right;
@@ -62,6 +68,7 @@
     font-size: 20px;
     color: #fff;
     transition: all 0.3s ease-in;
+    cursor: pointer;
 }
 
 .footer__li:hover{
