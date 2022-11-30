@@ -80,3 +80,19 @@
         grid-template-columns: repeat(2,1fr);
     }
 }
+
+
+.full-img{
+    height: 500px;
+    background-image: url("https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/what-is-coding.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    filter: blur(1.2px);
+    transition: filter .3s;
+}
+
+.full-img:hover{
+    filter: none;
+}
