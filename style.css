@@ -21,10 +21,16 @@
     background-color: rgba(255,255,255, 0.5);
     border-radius: .5rem;
     cursor: pointer;
+
 }
 .card .user-image {
     width: 100%;
     display: block;
+    transition: 0.8s;
+}
+.card,.user-image:hover { 
+    transform: scale(1.1);
+    transition: 0.8s ease;
 }
 .card .user-id {
     text-align: right;
@@ -39,4 +45,54 @@
     box-shadow: rgba(218, 57, 57, 0.35) 0px 5px 15px;
     background-color: rgba(44, 16, 16, 0.35);
     color: rgb(218, 203, 203);
+}
+
+
+/* FOOTER */
+
+.footer{
+    background-color: #000;
+    padding: 30px;
+}
+
+.footer__ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer__li{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.footer__li:hover{
+    color: rgb(161, 57, 225);
+}
+
+@media(max-width:600px){
+    .footer__ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+.full-img{
+    height: 500px;
+    background-image: url("https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/what-is-coding.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    filter: blur(1.2px);
+    transition: filter .3s;
+}
+
+.full-img:hover{
+    filter: none;
 }
