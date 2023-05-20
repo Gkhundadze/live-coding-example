@@ -113,7 +113,7 @@ function renderUsers(userArray, path) {
         cardFooter.textContent = 'Addresses : '
         element.userAddresses.forEach(address => {
             const spanElement = document.createElement('span')
-            spanElement.textContent = address
+            spanElement.textContent = address + " "
             cardFooter.append(spanElement)
         })
         card.append(
