@@ -128,6 +128,3 @@ function renderUsers(userArray, path) {
         path.append(card)
     })
 }
-            li.textContent = item.title +' | '+ item.author;
-        });
-    })
